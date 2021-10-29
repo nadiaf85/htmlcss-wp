@@ -1,5 +1,87 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 50px;
+}
+
 .logo img{
     height: 50px;
     border-right: 1px solid lightgrey;
     padding-right: 10px;
 }
+
+nav li{
+    display: inline;
+    text-transform: uppercase;
+    list-style: none;
+    padding-right: 10px;
+}
+
+nav li a{
+    color: #858585;
+}
+
+nav li a:hover{
+    text-decoration: none ;
+}
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    height: 600px;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+.testo-banner{
+    position: absolute;
+    color: black;
+    bottom: 20px;
+
+}
+
+.text-main{
+    color: lightgray;
+    margin-top: 3px;
+}
+
+.main-container{
+    position: relative;
+}
+.colsx{
+    background-image: url(../img/img-1.jpg);
+    height: 100px;
+    width: 20%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.immagini{
+    width: 100%;
+    height: 200px;
+}
+
+.coldx{
+    background-image: url(../img/img-3.jpg);
+    height: 100px;
+    width: 20%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.bannercx{
+    background-image: url(../img/banner-2.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+.main-container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
