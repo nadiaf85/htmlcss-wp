@@ -8,7 +8,6 @@ body{
     margin: auto;
     width: 90%;
 }
-
 .logo img{
     height: 50px;
     border-right: 1px solid lightgrey;
@@ -53,6 +52,7 @@ nav li a:hover{
     position: relative;
     background-repeat: no-repeat;
     border-radius: 15px;
+
 }
 
 .testo-banner{
@@ -121,14 +121,7 @@ p{
     margin: 0 5%;
     width: 50%;
     float: left;
-}
 
-#colsx, #colcx, #coldx{
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
 }
 
 .main-container::after{
