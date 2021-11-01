@@ -1,13 +1,15 @@
-body{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 50px;
-    font-size: 16px;
 }
 
 .container{
     margin: auto;
     width: 90%;
 }
+
 .logo img{
     height: 50px;
     border-right: 1px solid lightgrey;
@@ -35,9 +37,9 @@ nav li a:hover{
 
 .banner .testo-banner{
     position: absolute;
-    width: 60%;
-    bottom: 70px;
-    left: 50px;
+    width: 50%;
+    bottom: 50px;
+    left: 40px;
     color: #FFF;
 }
 
@@ -45,24 +47,36 @@ nav li a:hover{
     font-weight: normal;
     font-size: 2em;
 }
-
+.banner .testo-banner p{
+    color: white;
+}
 .banner{
     background-image: url(../img/banner.jpg);
-    height: 550px;
+    height: 450px;
     position: relative;
-    background-repeat: no-repeat;
-    border-radius: 15px;
+    border-radius: 10px;
+    background-position: center;
+    margin-bottom: 30px;
+}
 
+.overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 100%;
 }
 
 .testo-banner{
     position: absolute;
     color: black;
-    bottom: 20px;
+    bottom: 60px;
+    left: 40px;
 }
 
 h1{
-    margin-bottom:3px;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    font-size: 35px;
 }
 
 h6{
@@ -70,24 +84,28 @@ h6{
     color: #000;
     font-weight: normal;
     margin-bottom: 10px;
+    line-height: 50px;
 }
 
 p{
-    color: #C0C0C0;
+    color: gray;
+}
+
+.testo{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    line-height: 50px;
 }
 
 .text-main{
-    color: lightgray;
+    color: grey;
     margin-top: 0px;
+    font-size: 15px;
 }
 
 .main-container{
     position: relative;
-}
-.colsx{
-    width: 20%;
-    position: relative;
-    float: left;
+    top: 20px;
 }
 
 .immagini{
@@ -95,20 +113,31 @@ p{
     height: 200px;
     background-size: cover;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .colsx .immagini{
     background-image: url(../img/img-1.jpg);
-
+    background-position: center;
+    border-radius: 5px;
 }
 
 .coldx .immagini{
     background-image: url(../img/img-3.jpg);
+    background-position: center;
+    border-radius: 5px;
 
 }
 
 .colcx .immagini{
     background-image: url(../img/banner-2.jpg);
+    background-position: center;
+    border-radius: 5px;
+}
+
+.colsx{
+    width: 20%;
+    float: left;
 }
 
 .coldx{
@@ -121,7 +150,15 @@ p{
     margin: 0 5%;
     width: 50%;
     float: left;
+}
 
+#colsx, #colcx, #coldx{
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
 }
 
 .main-container::after{
@@ -132,5 +169,11 @@ p{
  
 footer{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
+
+footer::after{
+    content: ' \2665';
+    color: red;
+}
+    
