@@ -1,5 +1,7 @@
-body{
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -11,7 +13,7 @@ body{
 .logo img{
     height: 50px;
     border-right: 1px solid lightgrey;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 nav{
@@ -65,7 +67,6 @@ h3 + p {
     border-radius: 10px;
     height: 100%;
 }
-
 
 h1{
     margin-bottom: 0;
@@ -146,7 +147,7 @@ h6 + p {
  
 footer{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 footer::after{
